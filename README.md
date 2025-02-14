@@ -13,8 +13,11 @@ CDNDe是一款使用Go语言开发的工具，它能批量判断域名是否存�
   -h, --help  查看帮助
   -f          打开文件
   -o          输出文件
-  -t          保存类型, 默认ip
+  -t          保存类型, 默认IP
   -g          线程, 默认20
+-t 类型:
+  ip          类型为IP
+  domain      类型为域名
 ```
 
 
@@ -24,7 +27,8 @@ CDNDe是一款使用Go语言开发的工具，它能批量判断域名是否存�
 简单用法
 
 ```
-cdnde.exe -f target.txt  批量查看域名解析IP
+cdnde.exe -f target.txt          批量查看域名解析IP
+cdnde.exe -f target.txt -g 100   批量查看域名解析IP, 并设置线程为100
 ```
 
 其他用法
